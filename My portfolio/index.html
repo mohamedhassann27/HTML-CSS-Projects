@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="./imgs/my-picture7.png">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./CSS/Font Awesome.min.css"> -->
+    <!-- <link rel="icon" href=""> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"rel="stylesheet"/>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <!-- <li><a href="#media">Media</a></li> -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#clientsReviews">My Clients</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="toggle">
+                <p>Switch Theme</p>
+                <input class="toggle__input" id="toggle" type="checkbox">
+                <label class="toggle__label" for="toggle"></label>
+            </div>
+        </nav>
+    </header>
+
+    <section id="bio">
+        <div class="container">
+            <video src="./imgs/video-loop.mp4" muted loop autoplay ></video>
+            <div class="bio__data">
+                <h1>Hi There, I'm A Front-end Developer</h1>
+                <!-- <p>My name is Mohamed Hassan , a trainer of GDSC, Computer Science Student of Zagazig University in 2023 👨‍💻, with a keen interest in exploring the intricacies of programming and software development. I am passionate about mastering programming languages and refining my problem-solving skills. </p> -->
+                <p>
+                    My name is Mohamed Hassan, a Core Team member at GDSC and a Computer Science student at Zagazig University 👨‍💻, with a strong passion for front-end development and UI design. I’m dedicated to mastering modern web technologies and sharpening my problem-solving skills.
+                </p>
+                <div class="links">
+                    <a href="#contact">Say Hi</a>
+                    <a href="#">Download CV <span class="arrow">⭣</span></a>
+                </div>
+            </div>
+            <div class="bio__pic-cont">
+                <div class="large centered row">
+                    <svg viewBox="0 0 304 112">
+                        <g stroke-width="2" stroke="currentColor" stroke-linejoin="round" fill="none" fill-rule="evenodd">
+                          <polygon id="path-1" points="152,4 170,38 204,56 170,74 152,108 134,74 100,56 134,38"></polygon>
+                          <polygon style="opacity: 0" id="path-2" points="152,4 170,38 204,56 170,74 152,108 134,74 100,56 134,38"></polygon>
+                        </g>
+                    </svg>
+                </div>
+                <img src="./imgs/my-picture.png" alt="my-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="heading">Skills</h2>
+            <div class="skills__filters">
+                <button class="skills__button skills__button--isActive" data-type="all">All</button>
+                <button class="skills__button" data-type="frontend">Frontend</button>
+                <button class="skills__button" data-type="backend">Backend</button>
+            </div>
+
+            <ul class="skills__list">
+                    <li class="skills__column" data-type="frontend" data-name="HTML">
+                        <p>HTML <span>1Years</span></p>
+                        <i class="fa-brands fa-html5 icon"></i>
+                    </li>
+                    <li class="skills__column" data-type="frontend" data-name="CSS">
+                        <p>CSS <span>1Years</span></p>
+                        <i class="fa-brands fa-css3-alt icon"></i>
+                    </li>
+                    <li class="skills__column" data-type="frontend" data-name="Tailwind">
+                        <p>Tailwind <span>1Years</span></p>
+                        <img src="./imgs/tailwind-css.svg "alt="tailwind">
+                    </li>
+                    <li class="skills__column" data-type="frontend" data-name="Javascript">
+                        <p>Javascript <span>1Years</span><p> 
+                        <i class="fa-brands fa-js icon"></i>
+                    </li>                                    
+                    <li class="skills__column" data-type="frontend" data-name="React">
+                        <p>React <span>0Years</span></p>
+                        <i class="fa-brands fa-react icon"></i>
+                    </li>
+                    <li class="skills__column" data-type="backend" data-name="C++">
+                        <p>C++ <span>1Years</span></p>
+                        <img class="icon" src="./imgs/c-logo.png" alt="icon">
+                    </li>
+                    <li class="skills__column" data-type="backend" data-name="Python">
+                        <p>Python <span>1Years</span></p>
+                        <i class="fa-brands fa-python icon"></i>
+                    </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <video src="./imgs/video-loop.mp4" autoplay loop muted></video>
+            <h2 class="heading">MY PROJECTS</h2>
+            <div class="projects">
+                <div class="project">
+                    <div class="img1-cont img-cont">
+                        <img src="./imgs/project-1.png" alt="project1">
+                        <a href="https://ebook-xi-black.vercel.app/" target="_blank"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                    <div class="project__desc project1__desc">
+                        <h3>Ebook</h3>
+                        <p> Credit goes to FreePik for images used in this ebook landing page template. You may browse FreePik to download more free images for your     website.TemplateMo is one of the best websites to download free CSS templates for any purpose. This is an ebook landing page template using Bootstrap 5 CSS layout.
+                        </p>
+                        <!-- <p>Lorem ipsum dolor sit. amet consectetur adiposicing elit. Delectus, architecto. Deleniti nisi eligendi maxime, adiposci laudantium suscipit distinctio totam porro fugit ullam. perferendis accusantium. Aspernatur omnis accusamus blanditiis expedita. Ab</p> -->
+                        <a href="https://ebook-xi-black.vercel.app/" target="_blank">Live Demo <i class="fa-solid fa-arrow-up-right-from-square icon"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project__desc project2__desc">
+                        <h3>Lasles VPN</h3>
+                        <!-- <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.</p> -->
+                        <!-- <p>Lorem ipsum dolor sit. amet consectetur adiposicing elit. Delectus, architecto. Deleniti nisi eligendi maxime, adiposci laudantium suscipit distinctio totam porro fugit ullam. perferendis accusantium. Aspernatur omnis accusamus blanditiis expedita. Ab</p> -->
+                         <p>Want anything to be easy with LaslesVPN.
+                            Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.We Provide Many Features You Can Use. You can explore the features that we provide with fun and have their own functions each feature.
+                        </p>
+                        <a href="https://finexo-alpha.vercel.app/">Live Demo <i class="fa-solid fa-arrow-up-right-from-square icon"></i></a>
+                    </div>
+                    <div class="img2-cont img-cont">
+                        <img src="./imgs/project-2.png" alt="project2">
+                        <a href="https://ebook-xi-black.vercel.app/" target="_blank"><i class="fa-regular fa-eye"></i></a>
+                    </div>                 
+                </div>
+
+                <div class="project">
+                    <div class="img3-cont img-cont">
+                        <img src="./imgs/project-3.png" alt="project3">
+                        <a href="https://ebook-xi-black.vercel.app/" target="_blank"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                    <div class="project__desc project3__desc">
+                        <h3>SPACEDYNA</h3>
+                        <!-- <p>Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p> -->
+                        <!-- <p>Lorem ipsum dolor sit. amet consectetur adiposicing elit. Delectus, architecto. Deleniti nisi eligendi maxime, adiposci laudantium suscipit distinctio totam porro fugit ullam. perferendis accusantium. Aspernatur omnis accusamus blanditiis expedita. Ab</p> -->
+                         <p>
+                            WELCOME TO SPACE DYNAMIC
+                            We Make Digital Ideasbr & SEO Marketing
+                            Space Dynamic is a professional looking HTML template using a Bootstrap 5 (beta 2). This CSS template is free for you provided by TemplateMo.
+                            Grow Your Website With Our SEO
+                            Service & PROJECT Ideas.
+                         </p>
+                        <a href="">Live Demo  <i class="fa-solid fa-arrow-up-right-from-square icon"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__desc project4__desc">
+                        <h3>FINEXO</h3>
+                        <!-- <p>Lorem ipsum dolor sit. amet consectetur adiposicing elit. Delectus, architecto. Deleniti nisi eligendi maxime, adiposci laudantium suscipit distinctio totam porro fugit ullam. perferendis accusantium. Aspernatur omnis accusamus blanditiis expedita. Ab</p> -->
+                         <p>
+                            CRYPTO
+                            CURRENCY
+                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi. There are many variations of passages of Lorem Ipsum available.
+                        </p>
+                        <a href="">Live Demo   <i class="fa-solid fa-arrow-up-right-from-square icon"></i></a>
+                    </div>
+                    <div class="img4-cont img-cont">
+                        <img src="./imgs/project-4.png" alt="project4">
+                        <a href="https://ebook-xi-black.vercel.app/" target="_blank"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="img5-cont img-cont">
+                        <img src="./imgs/project-5.png" alt="project5">
+                        <a href="https://ebook-xi-black.vercel.app/" target="_blank"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                    <div class="project__desc project5__desc">
+                        <h3>Grand Coffee</h3>
+                        <!-- <p>Lorem ipsum dolor sit. amet consectetur adiposicing elit. Delectus, architecto. Deleniti nisi eligendi maxime, adiposci laudantium suscipit distinctio totam porro fugit ullam. perferendis accusantium. Aspernatur omnis accusamus blanditiis expedita. Ab</p> -->
+                         <p>
+                            Outstanding
+                            Coffee Shop
+                            There are many variations of passages of Lorem Ipsum available, but
+                            the majority have suffered alteration in some form, by injected humour, Full cleaning and housekeeping services for companies and households.Lorem Ipsum is simply dummy text of the printing. 
+                         </p>
+                        <a href="https://gdsc-zag-24-pikd.vercel.app/" target="_blank">Live Demo  <i class="fa-solid fa-arrow-up-right-from-square icon"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project__desc project6__desc">
+                        <h3>IO</h3>
+                        <!-- <p>Lorem ipsum dolor sit. amet consectetur adiposicing elit. Delectus, architecto. Deleniti nisi eligendi maxime, adiposci laudantium suscipit distinctio totam porro fugit ullam. perferendis accusantium. Aspernatur omnis accusamus blanditiis expedita. Ab</p> -->
+                         <p>
+                            Hello There
+                            We are Leon - Super Creative & Minimal Agency Web Template. Tell Us Your Idea, We Will Do All The Work, Your Product is Worldwide. Don't be busy, be productive. Graphic Design, UI & UX, Web Design, Web Development
+                         </p>
+                        <a href="https://gdsc-zag-24-pikd.vercel.app/" target="_blank">Live Demo  <i class="fa-solid fa-arrow-up-right-from-square icon"></i></a>
+                    </div>
+                    <div class="img6-cont img-cont">
+                        <img src="./imgs/project-6.png" alt="project6">
+                        <a href="https://ebook-xi-black.vercel.app/" target="_blank"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="img7-cont img-cont">
+                        <img src="./imgs/project-7.png" alt="project7">
+                        <a href="https://ebook-xi-black.vercel.app/" target="_blank"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                    <div class="project__desc project7__desc">
+                        <h3>Quran Tab</h3>
+                        <!-- <p>Lorem ipsum dolor sit. amet consectetur adiposicing elit. Delectus, architecto. Deleniti nisi eligendi maxime, adiposci laudantium suscipit distinctio totam porro fugit ullam. perferendis accusantium. Aspernatur omnis accusamus blanditiis expedita. Ab</p> -->
+                         <p>
+                            Get closer to the Holy Quran
+                            A Chrome extension that replaces your new tab with a random ayah from the Quran. It keeps you inspired by a verse from the Quran every time you open a new tab.
+                         </p>
+                        <a href="https://gdsc-zag-24-pikd.vercel.app/" target="_blank">Live Demo  <i class="fa-solid fa-arrow-up-right-from-square icon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+    </section>
+
+    <section id="clientsReviews">
+        <div class="container">
+            <h2>What My Clients Says</h2>
+            <div class="clientsCont">
+                <div class="client">
+                    <div class="clinet__inform">
+                        <div class="name">
+                            <img src="./imgs/Ellipse 175.png" alt="client img">
+                            <h4>Viezh Robert</h4>
+                        </div>
+                        <div class="stars">
+                            <p>4.9</p>
+                            <img src="./imgs/Group 1161.png" alt="star">
+                        </div>
+                    </div>
+                    <div>
+                        <p>"Mohamed quickly understood our needs and delivered a clean, responsive design with great attention to detail. Communication was smooth and the results exceeded expectations."
+                        </p>
+                    </div>
+                </div>
+                <div class="client">
+                    <div class="clinet__inform">
+                        <div class="name">
+                            <img src="./imgs/Ellipse 175 (2).png" alt="client img">
+                            <h4>Kim Young Jou</h4>
+                        </div>
+                        <div class="stars">
+                            <p>4.7</p>
+                            <img src="./imgs/Group 1161.png" alt="star">
+                        </div>
+                    </div>
+                    <div>
+                        <p>"Reliable, efficient, and thoughtful — Mohamed improved both the design and performance of our site. He delivered on time and made the code easier to maintain."
+                        </p>
+                    </div>
+                </div>
+                <div class="client">
+                    <div class="clinet__inform">
+                        <div class="name">
+                            <img src="./imgs/Ellipse 175 (1).png" alt="client img">
+                            <h4>Yessica Christy</h4>
+                        </div>
+                        <div class="stars">
+                            <p>4.8</p>
+                            <img src="./imgs/Group 1161.png" alt="star">
+                        </div>
+                    </div>
+                    <div>
+                        <p>"Mohamed transformed our vision into a modern, user-friendly interface. His smart suggestions and clean execution made a big difference. Highly recommended!"
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">  
+        <div class="container">
+            <video src="./imgs/video-loop.mp4" autoplay loop muted></video>
+            <div class="linksCont">
+                <p>free to reach out to me any time. I prefer to talk over email. especially since we may be a few time zones away.</p>
+                <a class="link" href="mailto:mohamedhassann542@gmail.com">mohamedhassann542@gmail.com</a>
+                <div class="icons">
+                    <a href="www.linkedin.com/in/mohamed-hassan-986837294"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                    <a href="https://github.com/mohamedhassann27"><i class="fa-brands fa-github icon"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100053883694929&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f icon"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter icon"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube icon"></i></a>
+
+                </div>
+            </div>
+
+            <div class="formCont">
+                <h2>LET'S WORK TOGETHER</h2>
+                <form action="">
+                    <input class="name" type="text" placeholder="Full Name" required>
+                    <input class="phone" type="number" placeholder="Phone Number" required> 
+                    <textarea name="message" id="message" placeholder="Your Message" rows="1" required></textarea>
+                    <div>
+                        <input class="submit" type="submit" value="Send Message">
+                        <i class="fa-solid fa-star icon"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 by Mohamed Hassan</p>
+    </footer>
+
+    <script src="./JS/script.js" type="module"></script>
+    
+</body>
+</html>
