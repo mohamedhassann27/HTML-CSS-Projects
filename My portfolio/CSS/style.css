@@ -9,7 +9,7 @@
     --btnBackgroundColor:var(--blackColor);
     --borderColor:var(--blackColor);
     --skillBackgroundColor:#eee;
-    --transition:.3s;
+    --transition:.2s;
     scroll-behavior: smooth;
 }
 *{
@@ -86,7 +86,7 @@ section:not(#projects){
     overflow: hidden;
     opacity: 0;
     transform: translateY(3rem);
-    transition: all .3s;
+    transition: all .2s;
 
     &.inView{
         opacity: 1;
@@ -169,10 +169,10 @@ header{
     /* intersection */
     &.inView{
         .bio__pic-cont{
-            animation: rightToLeft 2s alternate ;
+            animation: rightToLeft 1.5s alternate ;
         }
         .bio__data{
-            animation: leftToRight 2s alternate;
+            animation: leftToRight 1.5s alternate;
         }
     }
     
@@ -345,21 +345,22 @@ header{
             flex-direction: column;
             gap: 4rem;
             .project{
-                transition: all .3s;
+                transition: all .2s;
                 opacity: 0;
+                /* intersection */
                 &.inView{
                     opacity: 1;
                     .project1__desc,.project3__desc,.project5__desc,.project7__desc{
-                        animation: rightToLeft 2s alternate;
+                        animation: rightToLeft 1.5s alternate;
                     }
                     .project2__desc,.project4__desc,.project6__desc{
-                        animation: leftToRight 2s alternate;
+                        animation: leftToRight 1.5s alternate;
                     }
                     .img1-cont,.img3-cont,.img5-cont,.img7-cont{
-                        animation: leftToRight 2s alternate;
+                        animation: leftToRight 1.5s alternate;
                     }
                     .img2-cont,.img4-cont,.img6-cont{
-                        animation: rightToLeft 2s alternate;
+                        animation: rightToLeft 1.5s alternate;
                     }
                 }
                 display: flex;
@@ -458,10 +459,10 @@ header{
     overflow: hidden;
     &.inView{
         .linksCont{
-            animation: leftToRight 2s alternate;
+            animation: leftToRight 1.5s alternate;
         }
         .formCont{
-            animation: rightToLeft 2s alternate;
+            animation: rightToLeft 1.5s alternate;
         }
     }
 
@@ -550,6 +551,10 @@ html:has(.toggle__input:checked){
     .container{
         padding: 5rem 4rem;
     }
+
+    #bio .container .bio__pic-cont .centered svg {
+        width: 58rem;
+    }
 }
 
 @media (min-width:770px) and (max-width:850px){
@@ -560,6 +565,10 @@ html:has(.toggle__input:checked){
     }
     .container{
         padding: 5rem 2rem;
+    }
+    #bio .container .bio__pic-cont .centered svg {
+        width: 45rem;
+        left: 45%;
     }
 }
 
@@ -576,6 +585,7 @@ html:has(.toggle__input:checked){
     }
     #bio .container{
         flex-direction: column;
+        gap: 7rem;
         .bio__pic-cont{width: 25rem;}
     }
     #skills{
@@ -592,6 +602,7 @@ html:has(.toggle__input:checked){
 
 @media (max-width:480px){
     header{
+        background-color: red;
         nav .toggle{padding-right: 0;}
         padding: 1rem 2rem;
         nav{padding: 0 ;}
@@ -606,6 +617,9 @@ html:has(.toggle__input:checked){
         .bio__data h1{font-size: 4rem;}
         flex-direction: column;
         .bio__pic-cont{width: 27rem;}
+    }
+    #bio .container .bio__pic-cont .centered svg {
+        width: 55rem;
     }
     #skills{
         .container{
@@ -635,7 +649,5 @@ html:has(.toggle__input:checked){
         .icon{left: 58%;}
     }
         
-    
-
 }
 
