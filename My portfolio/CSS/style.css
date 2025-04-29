@@ -602,7 +602,6 @@ html:has(.toggle__input:checked){
 
 @media (max-width:480px){
     header{
-        background-color: red;
         nav .toggle{padding-right: 0;}
         padding: 1rem 2rem;
         nav{padding: 0 ;}
